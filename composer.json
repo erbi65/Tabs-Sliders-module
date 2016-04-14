@@ -1,0 +1,27 @@
+{
+    "name"             : "alledia/tabs-and-sliders-module",
+    "description"      : "Tabs & Sliders (module)",
+    "minimum-stability": "stable",
+    "license"          : "GPL-2+",
+    "type"             : "joomla.module",
+    "extra"            : {
+        "element"        : "mod_jw_ts",
+        "element-short"  : "jw_ts",
+        "name"           : "Tabs & Sliders (module)",
+        "client"         : "site",
+        "package-license": "free"
+    },
+    "authors"          : [
+        {
+            "name" : "Alledia",
+            "email": "support@alledia.com"
+        },
+        {
+            "name" : "JoomlaWorks",
+            "site": "www.joomlaworks.net"
+        }
+    ],
+    "require"          : {
+        "php"           : ">= 5.3"
+    }
+}
