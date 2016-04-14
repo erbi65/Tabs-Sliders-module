@@ -18,10 +18,10 @@ $mod_copyrights_start = "\n\n<!-- \"Tabs & Sliders\" Module starts here -->\n";
 $mod_copyrights_end   = "\n<!-- \"Tabs & Sliders\" Module ends here -->\n\n";
 
 // API
-$mainframe = &JFactory::getApplication();
-$document  = &JFactory::getDocument();
-$db        = &JFactory::getDBO();
-$user      = &JFactory::getUser();
+$mainframe = JFactory::getApplication();
+$document  = JFactory::getDocument();
+$db        = JFactory::getDBO();
+$user      = JFactory::getUser();
 $aid       = $user->get('aid');
 
 // Assign paths

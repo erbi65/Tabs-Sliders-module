@@ -34,7 +34,7 @@ class JElementPositions extends JElement
 
     public function fetchElement ($name, $value, &$node, $control_name)
     {
-        $db = &JFactory::getDBO();
+        $db = JFactory::getDBO();
 
         if (version_compare(JVERSION, '1.6.0', 'ge')) {
             $query = 'SELECT DISTINCT(template) AS text, template AS value FROM `#__template_styles` WHERE client_id = 0';
@@ -53,9 +53,9 @@ class JElementPositions extends JElement
 
         for ($i = 0, $n = count($templates); $i < $n; $i++) {
             $path = JPATH_SITE.DS.'templates'.DS.$templates[$i]->value;
-            $xml = &JFactory::getXMLParser('Simple');
+            $xml = JFactory::getXMLParser('Simple');
             if ($xml->loadFile($path.DS.'templateDetails.xml')) {
-                $p = &$xml->document->getElementByPath('positions');
+                $p = $xml->document->getElementByPath('positions');
                 if (is_a($p, 'JSimpleXMLElement') && count($p->children())) {
                     foreach ($p->children() as $child) {
                         if (!in_array($child->data(), $positions)) {
