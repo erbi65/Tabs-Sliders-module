@@ -117,4 +117,8 @@
             </fieldset>
         </fields>
     </config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Tabs &amp; Sliders (module)"><![CDATA[http://deploy.ostraining.com/client/update/free/stable/mod_jw_ts]]></server>
+    </updateservers>
 </extension>
