@@ -10,6 +10,17 @@
 	<version>3.0.0</version>
 	<description>MOD_JW_TS_TABS_AND_SLIDERS_MODULE_BY_JOOMLAWORKS</description>
 
+	<files>
+		<filename module="mod_jw_ts">mod_jw_ts.php</filename>
+		<folder>includes</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_jw_ts.ini</language>
+		<language tag="en-GB">en-GB.mod_jw_ts.sys.ini</language>
+	</languages>
+
 	<config>
 		<fields name="params">
 			<fieldset name="basic" addfieldpath="/modules/mod_jw_ts/includes/elements">
@@ -33,15 +44,4 @@
 			</fieldset>
 		</fields>
 	</config>
-
-	<files>
-		<filename module="mod_jw_ts">mod_jw_ts.php</filename>
-		<folder>includes</folder>
-		<folder>tmpl</folder>
-	</files>
-
-	<languages>
-		<language tag="en-GB">en-GB.mod_jw_ts.ini</language>
-		<language tag="en-GB">en-GB.mod_jw_ts.sys.ini</language>
-	</languages>
 </install>
