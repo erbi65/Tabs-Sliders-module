@@ -13,12 +13,12 @@ defined('_JEXEC') or die('Restricted access');
 /*
 Here we call the stylesheet style.css from a folder called 'css' and located at the same directory with this template file. If Joomla!'s cache is turned on, we print out the CSS include within a script tag so we're valid and the styling is included properly (it's how Joomla! works unfortunately).
 */
-$filePath = substr(JURI::base(), 0, -1).str_replace(JPATH_SITE,'',dirname(__FILE__));
+$filePath = substr(JURI::base(), 0, -1) . str_replace(JPATH_SITE, '', dirname(__FILE__));
 
 ?>
 
-<?php if($mainframe->getCfg('caching') && $params->get('cache')==1): ?>
-<?php if(!defined('JW_TS_MOD_CSS')): ?>
+<?php if ($mainframe->getCfg('caching') && $params->get('cache') == 1) : ?>
+<?php if (!defined('JW_TS_MOD_CSS')) : ?>
 <script type="text/javascript">
 	//<![CDATA[
 	document.write('\
@@ -30,19 +30,19 @@ $filePath = substr(JURI::base(), 0, -1).str_replace(JPATH_SITE,'',dirname(__FILE
 </script>
 <?php define('JW_TS_MOD_CSS', true); ?>
 <?php endif; ?>
-<?php else: ?>
+<?php else : ?>
 <?php $document->addStyleSheet($filePath.'/css/template.css'); ?>
 <?php endif; ?>
 
-<div id="jwTabsAndSlidersModule<?php echo $module->id; ?>" class="jwts_tabber<?php if($params->get('moduleclass_sfx')) echo ' '.$params->get('moduleclass_sfx'); ?>">
-	<?php foreach($modulesInPosition as $mod): ?>
+<div id="jwTabsAndSlidersModule<?php echo $module->id; ?>" class="jwts_tabber<?php if ($params->get('moduleclass_sfx')) echo ' ' . $params->get('moduleclass_sfx'); ?>">
+	<?php foreach ($modulesInPosition as $mod) : ?>
 	<div class="jwts_tabbertab" title="<?php echo $mod->title; ?>">
 		<h2>
 			<a href="javascript:void(null);" name="advtab">
 				<?php echo $mod->title; ?>
 			</a>
 		</h2>
-		<?php if($jwts_showmodtitle): ?>
+		<?php if ($jwts_showmodtitle) : ?>
 		<div class="jwts_modtitle">
 			<?php echo $mod->title; ?>
 		</div>

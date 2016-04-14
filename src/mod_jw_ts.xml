@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.4" type="plugin" group="content" method="upgrade">
-	<name>MOD_JW_TS_XML_TITLE</name>
-	<author>Alledia</author>
-	<authorEmail>support@alledia.com</authorEmail>
-	<authorUrl>http://www.alledia.com</authorUrl>
-	<copyright>Copyright (C) 2016 Open Source Training, LLC. All rights reserved. / Copyright (c) 2006 - 2015 JoomlaWorks Ltd. All rights reserved.</copyright>
-	<creationDate>April 14, 2016</creationDate>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-	<version>3.0.0</version>
-	<description>MOD_JW_TS_TABS_AND_SLIDERS_MODULE_BY_JOOMLAWORKS</description>
+    <name>MOD_JW_TS_XML_TITLE</name>
+    <author>Alledia</author>
+    <authorEmail>support@alledia.com</authorEmail>
+    <authorUrl>http://www.alledia.com</authorUrl>
+    <copyright>Copyright (C) 2016 Open Source Training, LLC. All rights reserved. / Copyright (c) 2006 - 2015 JoomlaWorks Ltd. All rights reserved.</copyright>
+    <creationDate>April 14, 2016</creationDate>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>3.0.0</version>
+    <description>MOD_JW_TS_TABS_AND_SLIDERS_MODULE_BY_JOOMLAWORKS</description>
 
-	<alledia>
+    <alledia>
         <element>jw_ts</element>
         <namespace>JW_TS</namespace>
         <name><![CDATA[Tabs &amp; Sliders (module)]]></name>
@@ -33,38 +33,38 @@
         <include>AllediaFreeDefaultFiles</include>
     </alledia>
 
-	<files>
-		<filename module="mod_jw_ts">mod_jw_ts.php</filename>
-		<folder>includes</folder>
-		<folder>tmpl</folder>
-	</files>
+    <files>
+        <filename module="mod_jw_ts">mod_jw_ts.php</filename>
+        <folder>includes</folder>
+        <folder>tmpl</folder>
+    </files>
 
-	<languages>
-		<language tag="en-GB">language/en-GB/en-GB.mod_jw_ts.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.mod_jw_ts.sys.ini</language>
-	</languages>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_jw_ts.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.mod_jw_ts.sys.ini</language>
+    </languages>
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic" addfieldpath="/modules/mod_jw_ts/includes/elements">
-				<field name="moduleclass_sfx" type="text" default="" label="MOD_JW_TS_MODULE_CLASS_SUFFIX" description="MOD_JW_TS_MODULE_CLASS_SUFFIX_DESC" />
-		    <field name="jwts_position" type="positions" default="" label="MOD_JW_TS_XML_POSITION" description="MOD_JW_TS_XML_POSITION" />
-		    <field name="jwts_displaytype" type="radio" default="tabs" label="MOD_JW_TS_XML_DISPLAY_TYPE" description="MOD_JW_TS_XML_DISPLAY_TYPE_DESC">
-		      <option value="tabs">MOD_JW_TS_XML_TABS</option>
-		      <option value="sliders">MOD_JW_TS_XML_SLIDERS</option>
-		    </field>
-		    <field name="jwts_showmodtitle" type="radio" default="0" label="MOD_JW_TS_XML_MODULE_TITLE" description="MOD_JW_TS_XML_MODULE_TITLE_DESC">
-		      <option value="1">MOD_JW_TS_SHOW</option>
-		      <option value="0">MOD_JW_TS_HIDE</option>
-		    </field>
-			</fieldset>
-			<fieldset name="advanced">
-				<field name="cache" type="list" default="0" label="MOD_JW_TS_CACHING" description="MOD_JW_TS_CACHING_DESC">
-					<option value="1">MOD_JW_TS_USE_GLOBAL</option>
-					<option value="0">MOD_JW_TS_NO_CACHING</option>
-				</field>
-				<field name="cache_time" type="text" default="900" label="MOD_JW_TS_CACHE_TIME" description="MOD_JW_TS_CACHE_TIME_DESC" />
-			</fieldset>
-		</fields>
-	</config>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/modules/mod_jw_ts/includes/elements">
+                <field name="moduleclass_sfx" type="text" default="" label="MOD_JW_TS_MODULE_CLASS_SUFFIX" description="MOD_JW_TS_MODULE_CLASS_SUFFIX_DESC" />
+            <field name="jwts_position" type="positions" default="" label="MOD_JW_TS_XML_POSITION" description="MOD_JW_TS_XML_POSITION" />
+            <field name="jwts_displaytype" type="radio" default="tabs" label="MOD_JW_TS_XML_DISPLAY_TYPE" description="MOD_JW_TS_XML_DISPLAY_TYPE_DESC">
+              <option value="tabs">MOD_JW_TS_XML_TABS</option>
+              <option value="sliders">MOD_JW_TS_XML_SLIDERS</option>
+            </field>
+            <field name="jwts_showmodtitle" type="radio" default="0" label="MOD_JW_TS_XML_MODULE_TITLE" description="MOD_JW_TS_XML_MODULE_TITLE_DESC">
+              <option value="1">MOD_JW_TS_SHOW</option>
+              <option value="0">MOD_JW_TS_HIDE</option>
+            </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="cache" type="list" default="0" label="MOD_JW_TS_CACHING" description="MOD_JW_TS_CACHING_DESC">
+                    <option value="1">MOD_JW_TS_USE_GLOBAL</option>
+                    <option value="0">MOD_JW_TS_NO_CACHING</option>
+                </field>
+                <field name="cache_time" type="text" default="900" label="MOD_JW_TS_CACHE_TIME" description="MOD_JW_TS_CACHE_TIME_DESC" />
+            </fieldset>
+        </fields>
+    </config>
 </extension>

@@ -292,12 +292,12 @@ if (typeof tabberOptions == 'undefined') {
 var jwSlider = {
 	jwts_slideSpeed: 30, 	// Higher value = faster
 	jwts_timer: 10,				// Lower value = faster
-	
+
 	objectIdToSlideDown: false,
 	jwts_activeId: false,
 	jwts_slideInProgress: false,
 	jwts_expandMultiple: false,
-	
+
 	showHideContent: function(e, inputId) {
 		if (jwSlider.jwts_slideInProgress) return;
 		jwSlider.jwts_slideInProgress = true;
@@ -320,7 +320,7 @@ var jwSlider = {
 			jwSlider.jwts_activeId = false;
 		}
 	},
-	
+
 	slideContent: function(inputId, direction) {
 		var obj = document.getElementById('jwts_a' + inputId);
 		var contentObj = document.getElementById('jwts_ac' + inputId);
@@ -358,7 +358,7 @@ var jwSlider = {
 			}
 		}
 	},
-	
+
 	initShowHideDivs: function() {
 		var divs = document.getElementsByTagName('div');
 		var divCounter = 1;
