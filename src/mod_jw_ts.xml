@@ -10,6 +10,29 @@
 	<version>3.0.0</version>
 	<description>MOD_JW_TS_TABS_AND_SLIDERS_MODULE_BY_JOOMLAWORKS</description>
 
+	<alledia>
+        <element>jw_ts</element>
+        <namespace>JW_TS</namespace>
+        <name><![CDATA[Tabs &amp; Sliders (module)]]></name>
+        <license>free</license>
+
+        <relatedExtensions>
+            <extension
+                type="library"
+                element="allediaframework">AllediaFramework</extension>
+
+            <extension
+                type="plugin"
+                group="system"
+                element="ossystem"
+                publish="true"
+                ordering="first">OSSystem</extension>
+
+        </relatedExtensions>
+
+        <include>AllediaFreeDefaultFiles</include>
+    </alledia>
+
 	<files>
 		<filename module="mod_jw_ts">mod_jw_ts.php</filename>
 		<folder>includes</folder>
