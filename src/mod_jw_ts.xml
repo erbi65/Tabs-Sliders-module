@@ -17,8 +17,8 @@
 	</files>
 
 	<languages>
-		<language tag="en-GB">en-GB.mod_jw_ts.ini</language>
-		<language tag="en-GB">en-GB.mod_jw_ts.sys.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jw_ts.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_jw_ts.sys.ini</language>
 	</languages>
 
 	<config>
