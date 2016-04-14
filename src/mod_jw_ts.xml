@@ -33,11 +33,23 @@
         <include>AllediaFreeDefaultFiles</include>
     </alledia>
 
+    <scriptfile>script.installer.php</scriptfile>
+
     <files>
         <filename module="mod_jw_ts">mod_jw_ts.php</filename>
         <folder>includes</folder>
         <folder>tmpl</folder>
+        <folder>library</folder>
+        <folder>form</folder>
+        <folder>views</folder>
     </files>
+
+    <media destination="mod_jw_ts" folder="media">
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>images</folder>
+        <folder>fonts</folder>
+    </media>
 
     <languages>
         <language tag="en-GB">language/en-GB/en-GB.mod_jw_ts.ini</language>
@@ -57,6 +69,12 @@
               <option value="1">MOD_JW_TS_SHOW</option>
               <option value="0">MOD_JW_TS_HIDE</option>
             </field>
+            <field
+                type="customfooter"
+                name="customfooter"
+                media="mod_jw_ts"
+                showgoproad="0"
+                jedurl="http://extensions.joomla.org/extensions/extension/news-display/article-elements/tabs-sliders-for-articles" />
             </fieldset>
             <fieldset name="advanced">
                 <field name="cache" type="list" default="0" label="MOD_JW_TS_CACHING" description="MOD_JW_TS_CACHING_DESC">

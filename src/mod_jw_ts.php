@@ -14,8 +14,8 @@ defined('_JEXEC') or die('Restricted access');
 
 // JoomlaWorks reference parameters
 $mod_name             = "mod_jw_ts";
-$mod_copyrights_start = "\n\n<!-- JoomlaWorks \"Tabs & Sliders\" Module (v2.0) starts here -->\n";
-$mod_copyrights_end   = "\n<!-- JoomlaWorks \"Tabs & Sliders\" Module (v2.0) ends here -->\n\n";
+$mod_copyrights_start = "\n\n<!-- \"Tabs & Sliders\" Module starts here -->\n";
+$mod_copyrights_end   = "\n<!-- \"Tabs & Sliders\" Module ends here -->\n\n";
 
 // API
 $mainframe = &JFactory::getApplication();
