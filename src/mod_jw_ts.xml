@@ -11,7 +11,7 @@
     <description>MOD_JW_TS_TABS_AND_SLIDERS_MODULE_BY_JOOMLAWORKS</description>
 
     <alledia>
-        <element>jw_ts</element>
+        <element publish="true">jw_ts</element>
         <namespace>JW_TS</namespace>
         <name><![CDATA[Tabs &amp; Sliders (module)]]></name>
         <license>free</license>
